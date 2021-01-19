@@ -2,7 +2,7 @@
 Custom omniauth strategy for [Swoop](http://swoopnow.com), a password-free authentication tool.
 
 ## Rails Usage
-Put `gem 'omniauth-swoop', '0.1.3', github: 'Swoop-Password-Free/omniauth-swoop', branch: 'main'` in your `Gemfile`
+Add `gem 'omniauth-swoop'` to your `Gemfile`
 
 In `config/initializers/omniauth.rb` put the following code:
 ```
