@@ -4,6 +4,8 @@ module OmniAuth
   module Strategies
     class Swoop < OmniAuth::Strategies::OAuth2
 
+      include OmniAuth::Strategy
+
       option :name, "swoop"
 
       option :client_options, {
@@ -41,7 +43,7 @@ module OmniAuth
         { raw_info: raw_info }
       end
 
-      def raw_info        
+      def raw_info
         @raw_info ||= access_token.get(options.client_options[:user_info_url]).parsed
         @raw_info["id_token"] = access_token.params["id_token"]
       end

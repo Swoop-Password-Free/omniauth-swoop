@@ -1,5 +1,5 @@
 module OmniAuth
   module Swoop
-    VERSION = "0.1.4"
+    VERSION = "0.1.6".freeze
   end
 end

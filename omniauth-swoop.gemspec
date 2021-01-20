@@ -1,7 +1,11 @@
 # -*- encoding: utf-8 -*-
+lib = File.expand_path("../lib", __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require "omniauth-swoop/version"
+
 Gem::Specification.new do |s|
   s.name        = 'omniauth-swoop'
-  s.version     = '0.1.4'
+  s.version     = OmniAuth::Swoop::VERSION
   s.date        = '2021-01-19'
   s.homepage    = "https://github.com/swoop-password-free/omniauth-swoop"
   s.description = %q{OmniAuth strategy for Swoop passwordless authentication}

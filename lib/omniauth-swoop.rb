@@ -1,2 +1,2 @@
 require 'omniauth/strategies/swoop'
-require 'omniauth/swoop-version'
+require 'omniauth-swoop/version'
